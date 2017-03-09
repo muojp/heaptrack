@@ -1,0 +1,5 @@
+PermitEmptyPasswords yes
+PasswordAuthentication yes
+PermitRootLogin yes
+UsePAM no
+X11Forwarding yes
