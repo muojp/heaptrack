@@ -27,8 +27,8 @@ RUN git clone git://anongit.kde.org/heaptrack \
  && rm -rf heaptrack
 
 RUN mkdir -p /opt/noVNC/utils/websockify \
- && wget -qO- https://github.com/novnc/noVNC/archive/7e19216.tar.gz | tar zx --strip-components=1 -C /opt/noVNC \
- && wget -qO- https://github.com/kanaka/websockify/archive/5b7f722.tar.gz | tar zx --strip-components=1 -C /opt/noVNC/utils/websockify
+ && curl https://github.com/novnc/noVNC/archive/7e19216.tar.gz | tar zx --strip-components=1 -C /opt/noVNC \
+ && curl https://github.com/kanaka/websockify/archive/5b7f722.tar.gz | tar zx --strip-components=1 -C /opt/noVNC/utils/websockify
 
 COPY run.sh /root/run.sh
 COPY index.html /noVNC/
