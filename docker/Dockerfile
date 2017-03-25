@@ -31,7 +31,7 @@ RUN mkdir -p /opt/noVNC/utils/websockify \
  && curl -SL https://github.com/kanaka/websockify/archive/5b7f722.tar.gz | tar zx --strip-components=1 -C /opt/noVNC/utils/websockify
 
 COPY run.sh /root/run.sh
-COPY index.html /noVNC/
+COPY index.html /opt/noVNC/
 
 EXPOSE 6080
 
